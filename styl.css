@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(61,61,61);
+    background: linear-gradient(90deg, rgba(61,61,61,1) 0%, rgba(153,41,83,1) 50%, rgba(252,156,19,1) 100%);
+}
+
+
+main{
+    width: 100%;
+}
+
+.lvlChoiceHeader{
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+.levels{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.lvl{
+    width:10vh;
+    margin: 2ch;
+    text-align: center;
+    padding: 2vh;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#easy{background-color: rgb(71, 155, 71);}
+#medium{background-color: rgb(252, 252, 125);}
+#hard{background-color: rgb(248, 72, 72);}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh
+}
+
+.questionFrame {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 40vh;
+    margin: auto;
+    margin-top: 10vh;
+    height: 60vh;
+    padding: 5vh;
+    border: 5px solid black;
+}
+
+.answerField{
+    border-radius: 20px;
+    margin: 2vh 0;
+    border: 0;
+    height: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 15vh;
+    color: aliceblue;
+    background-color: rgb(62, 62, 62);
+}
+
+.question{
+    font-size: 3rem;
+    color: rgb(62, 62, 62);;
+}
+
+#show{
+    margin-top: 5vh;
+    width: 20vh;
+    height: 8vh;
+    border-radius: 15px;
+    border:0px;
+    background-color: rgb(62, 62, 62);
+    color: aliceblue;
+    font-size:2rem;
+}
+
+.points{
+    margin-top: auto;
+    font-size: 1.2rem;
+    justify-self: end;
+    color: black !important;
+}
+
+#summarySection {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    margin: 5vh 0;
+}
+
+.summaryInfo{
+    font-size: 1.3rem;
+}
+
+#resultsTable {
+    flex:30%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#resultsTable table{
+    height: 100%;
+    width: 1.2rem;
+}
+
+.chart{
+    flex:70%;
+    display: flex;
+    justify-content: center; 
+}
+
+#myChart{
+    width: 100%;
+    background-color: aliceblue;
+    height: 100% !important;
+}
+
+.summaryDataDisplay{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10vh;
+    height: 550px;
+}
+
+.contentTable{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    color: black;
+}
+
+.contentTable th{
+    background-color: rgb(53, 53, 53);
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contentTable th,
+.contentTable td{
+padding: 12px 15px;
+}
+
+.contentTable tbody tr{
+    border-bottom: 1px solid #ddd;;
+    background-color: #FFF;
+}
+
+.contentTable tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.contentTable tbody tr:last-of-type{
+    border-bottom: 2px solid grey;
+}
